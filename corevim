@@ -1,0 +1,5 @@
+#!/bin/sh
+
+export NVIM_APPNAME=corevim
+
+nvim "$@"

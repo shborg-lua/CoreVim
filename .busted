@@ -1,0 +1,42 @@
+return {
+  _all = {
+    coverage = false,
+    lpath = "lua/?.lua;lua/?/init.lua;build/2.1.0-beta3/share/lua/5.1/?.lua;build/2.1.0-beta3/share/lua/5.1/?/init.lua",
+    pattern = "spec%.lua$",
+    lua = "/Users/al/dev/projects/corevim/build/2.1.0-beta3/bin/nlua",
+    ROOT = { "spec/" },
+  },
+  default = {
+    tags = {
+      "tests",
+      "unit",
+      "endtest",
+      "integration",
+    },
+    output = "htest",
+    verbose = true,
+    -- ["exclude-pattern"] = "sum_spec", -- do not run spec files inside fixture
+    -- helper = "spec.busted_helper",
+    -- ["auto-insulate"] = false,
+    ROOT = { "spec/tests" },
+  },
+  tests = {
+    verbose = true,
+    ROOT = { "spec/tests" },
+  },
+
+  endtest = {
+    verbose = true,
+    ROOT = { "spec/tests" },
+  },
+  unit = {
+    tags = "unit",
+    verbose = true,
+    ROOT = { "spec/tests" },
+  },
+  integration = {
+    tags = "integration",
+    verbose = true,
+    ROOT = { "spec/tests" },
+  },
+}

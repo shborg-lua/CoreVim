@@ -1,0 +1,14 @@
+tt.*
+.tests
+doc/tags
+debug
+.repro
+foo.*
+*.log
+data
+/scratch
+/build
+/.tmp
+/spell
+/.tests
+/workspace
